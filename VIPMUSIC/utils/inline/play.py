@@ -14,11 +14,46 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from VIPMUSIC.utils.formatters import time_to_seconds
 
 
+def to_small_caps(text):
+    # Helper function to convert text to small caps
+    small_caps = {
+        "a": "ᴀ",
+        "b": "ʙ",
+        "c": "ᴄ",
+        "d": "ᴅ",
+        "e": "ᴇ",
+        "f": "ғ",
+        "g": "ɢ",
+        "h": "ʜ",
+        "i": "ɪ",
+        "j": "ᴊ",
+        "k": "ᴋ",
+        "l": "ʟ",
+        "m": "ᴍ",
+        "n": "ɴ",
+        "o": "ᴏ",
+        "p": "ᴘ",
+        "q": "ǫ",
+        "r": "ʀ",
+        "s": "s",
+        "t": "ᴛ",
+        "u": "ᴜ",
+        "v": "ᴠ",
+        "w": "ᴡ",
+        "x": "x",
+        "y": "ʏ",
+        "z": "ᴢ",
+    }
+    return "".join([small_caps.get(c, c) for c in text.lower()])
+
+
 def stream_markup_timerr(_, videoid, chat_id, played, dur):
     played_sec = time_to_seconds(played)
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
+
+    # Fun and engaging sentences with progress bar
     if 10 < umm <= 20:
         bar = "——◉——————————"
     elif 20 <= umm < 35:
@@ -43,7 +78,7 @@ def stream_markup_timerr(_, videoid, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} •{bar}• {dur}",
+                text=f"⏲️ Pʟᴀʏᴇᴅ sᴏɴɢs » {played}/{dur} ⏳",
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
