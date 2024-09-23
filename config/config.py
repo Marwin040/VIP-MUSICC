@@ -52,7 +52,7 @@ EXTRA_PLUGINS = getenv(
 
 EXTRA_PLUGINS_REPO = getenv(
     "EXTRA_PLUGINS_REPO",
-    "https://github.com/THE-VIP-BOY-OP/Extra-Plugin",
+    "https://github.com/Marwin040/Extra-Plugin",
 )
 # Fill here the external plugins repo where plugins that you want to load
 
@@ -74,7 +74,7 @@ LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "1808943146").split())
+    map(int, getenv("OWNER_ID", "7798468229").split())
 )  # Input type must be interger
 
 
@@ -95,7 +95,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/THE-VIP-BOY-OP/VIP-MUSIC",
+    "https://github.com/Marwin040/VIP-MUSICC",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -108,14 +108,14 @@ GIT_TOKEN = getenv(
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/VIP_CREATORS"
+    "SUPPORT_CHANNEL", "https://t.me/Yor_Forgerr_0"
 )  # Example:- https://t.me/VIP_CREATORS
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/TG_FRIENDSS"
+    "SUPPORT_GROUP", "https://t.me/TSS_Support_Group"
 )  # Example:- https://t.me/TG_FRIENDSS
 
 SUPPORT_CHAT = getenv(
-    "SUPPORT_GROUP", "https://t.me/TG_FRIENDSS"
+    "SUPPORT_GROUP", "https://t.me/TSS_Support_Group"
 )  # Example:- https://t.me/TG_FRIENDSS
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", False)
@@ -138,7 +138,7 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 
 # Your Github Repo.. Will be shown on /start Command
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/THE-VIP-BOY-OP/VIP-MUSIC")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/Marwin040/VIP-MUSICC")
 
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
@@ -211,17 +211,17 @@ autoclean = []
 
 START_IMG_URL = getenv(
     "START_IMG_URL",
-    "https://te.legra.ph/file/ecdeac045f4045c198bd6.jpg",
+    "https://envs.sh/0tn.jpg",
 )
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://telegra.ph/file/91533956c91d0fd7c9f20.jpg",
+    "https://envs.sh/0tT.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
     "PLAYLIST_IMG_URL",
-    "https://telegra.ph/file/f4edfbd83ec3150284aae.jpg",
+    "https://envs.sh/wJ7.jpg",
 )
 
 GLOBAL_IMG_URL = getenv(
@@ -231,7 +231,7 @@ GLOBAL_IMG_URL = getenv(
 
 STATS_IMG_URL = getenv(
     "STATS_IMG_URL",
-    "https://telegra.ph/file/4dd9e2c231eaf7c290404.jpg",
+    "https://envs.sh/0tp.jpg",
 )
 
 TELEGRAM_AUDIO_URL = getenv(
