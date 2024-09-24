@@ -1,4 +1,4 @@
-pip 24.2
+pip==24.2
 deep-translator
 pyromod
 openai
