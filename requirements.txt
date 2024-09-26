@@ -12,6 +12,7 @@ heroku3
 motor
 numpy
 opencv-python
+pyromod
 pillow==9.5.0
 psutil
 pymongo==3.12.0
