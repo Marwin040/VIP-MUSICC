@@ -1,4 +1,4 @@
-
+deep-translator
 aiofiles
 aiohttp
 asyncio
