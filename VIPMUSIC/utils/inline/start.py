@@ -37,7 +37,7 @@ def private_panel(_):
             InlineKeyboardButton(text="𝖢𝗁𝖺𝗇𝗇𝖾𝗅🥀", url=config.SUPPORT_CHANNEL),
         ],
         [
-            InlineKeyboardButton(text="𝖣𝖾𝗏𝗅𝗈𝗉𝖾𝗋🧑‍💻", url=f"https://t.me/User_Dead_200"),
+            InlineKeyboardButton(text="𝖣𝖾𝗏𝗅𝗈𝗉𝖾𝗋🧑‍💻", user_id=config.OWNER_ID),
             InlineKeyboardButton(
                 text="۞ 𝖥𝖾𝖺𝗍𝗎𝗋𝖾𝗌 ۞", callback_data="settings_back_helper"
             )
