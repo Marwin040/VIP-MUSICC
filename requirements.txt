@@ -8,6 +8,7 @@ ffmpeg-python
 gitpython
 httpx[http2]
 hachoir
+wget
 heroku3
 motor
 numpy
