@@ -7,6 +7,8 @@
 #
 # All rights reserved.
 #
+import asyncio
+
 from pyrogram import filters
 from pyrogram.enums import ChatMemberStatus
 from pyrogram.errors import UserNotParticipant
@@ -170,7 +172,32 @@ async def assistant_banned(client: app, member: ChatMemberUpdated):
             await VIP.st_stream(chat_id)
             await set_loop(chat_id, 0)
             await app.unban_chat_member(chat_id, userbot.id)
+            await asyncio.sleep(10)
     except UserNotParticipant:
         return
     except Exception as e:
         return
+
+
+@app.on_message(filters.video_chat_started & filters.group)
+async def brah(_, msg):
+    chat_id = msg.chat.id
+    try:
+        await msg.reply("**😍ᴠɪᴅᴇᴏ ᴄʜᴀᴛ sᴛᴀʀᴛᴇᴅ🥳**")
+        await VIP.st_stream(chat_id)
+        await set_loop(chat_id, 0)
+    except Exception as e:
+        return await msg.reply(f"**Error {e}**")
+
+
+# vc off
+@app.on_message(filters.video_chat_ended & filters.group)
+async def brah2(_, msg):
+    chat_id = msg.chat.id
+    try:
+        await msg.reply("**😕ᴠɪᴅᴇᴏ ᴄʜᴀᴛ ᴇɴᴅᴇᴅ💔**")
+        await VIP.st_stream(chat_id)
+        await set_loop(chat_id, 0)
+    except Exception as e:
+        return await msg.reply(f"**Error {e}**")
+            
